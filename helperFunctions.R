@@ -77,3 +77,11 @@ calc.alpha <- function(IO) {
 calc.F <- function(IO) {
   return(calc.IO.metrics(IO)["F"] %>% as.numeric)  }
 
+# Example
+cells <- c(10, 20, 20, 10)
+rnames <- c("Ag", "Energy")
+cnames <- c("Ag", "Energy")
+IO.matrix <- matrix(cells, nrow=2, ncol=2, byrow=TRUE, dimnames=list(rnames,cnames))
+x <- c(100,50)
+y <- c(70,20)
+
